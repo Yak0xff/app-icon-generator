@@ -5,7 +5,8 @@ import { getMessages, getTranslations } from 'next-intl/server';
 import { locales, defaultLocale } from '@/i18n';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import StructuredData from '@/components/StructuredData';
-import Analytics from '@/components/Analytics';
+import GoogleAnalytics from '@/components/Analytics';
+import { Analytics } from "@vercel/analytics/react"
 import GoogleAdsenseAuto from '@/components/GoogleAdsense';
 import { metadata as seoMetadata } from './metadata';
 import '../globals.css';
@@ -159,7 +160,8 @@ export default async function LocaleLayout({
             </footer>
           </div>
           <StructuredData />
-          <Analytics />
+          <GoogleAnalytics />
+          <Analytics/>
         </NextIntlClientProvider>
       </body>
     </html>

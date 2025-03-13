@@ -2,7 +2,7 @@
 
 import Script from 'next/script';
 
-export default function Analytics() {
+export default function GoogleAnalytics() {
   const googleAnalyticsId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS;
   const umamiWebsiteId = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID;
   const umamiScriptSrc = process.env.NEXT_PUBLIC_UMAMI_SRC;
