@@ -19,11 +19,9 @@ const inter = Inter({
 });
 
 // 使用一个辅助函数来安全地获取locale
-async function getLocaleFromParams(params: any): Promise<string> {
+async function getLocaleFromParams(params: { locale: string }): Promise<string> {
   try {
-    // 尝试等待params
-    const awaitedParams = await params;
-    return awaitedParams?.locale || defaultLocale;
+    return params?.locale || defaultLocale;
   } catch (error) {
     console.error('Error getting locale from params:', error);
     return defaultLocale;
@@ -31,14 +29,14 @@ async function getLocaleFromParams(params: any): Promise<string> {
 }
 
 export async function generateMetadata(props: { 
-  params: { locale: string } 
+  params: Promise<{ locale: string }> 
 }): Promise<Metadata> {
-  // 使用辅助函数获取locale
-  const locale = await getLocaleFromParams(props.params) as keyof typeof seoMetadata;
+  // 使用await获取params
+  const { locale } = await props.params;
   const t = await getTranslations({ locale, namespace: 'app' });
   
   // 获取当前语言的SEO元数据
-  const meta = seoMetadata[locale];
+  const meta = seoMetadata[locale as keyof typeof seoMetadata];
   
   // 构建规范链接URL
   const canonicalUrl = new URL(
@@ -126,12 +124,15 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default async function LocaleLayout(props: {
+export default async function LocaleLayout({
+  children,
+  params,
+}: {
   children: React.ReactNode;
-  params: { locale: string };
-}): Promise<React.ReactElement> {
-  // 使用辅助函数获取locale
-  const locale = await getLocaleFromParams(props.params);
+  params: Promise<{ locale: string }>;
+}) {
+  // 使用await获取params
+  const { locale } = await params;
   const messages = await getMessages({ locale });
   
   return (
@@ -150,7 +151,7 @@ export default async function LocaleLayout(props: {
           <div className="relative">
             <LanguageSwitcher />
             <main className="container mx-auto px-4 py-8 max-w-6xl">
-              {props.children}
+              {children}
             </main>
             <footer className="text-center py-4 text-sm text-gray-500">
               <p>© {new Date().getFullYear()} App Icon Generator. All rights reserved.</p>
