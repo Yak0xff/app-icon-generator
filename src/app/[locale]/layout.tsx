@@ -156,7 +156,7 @@ export default async function LocaleLayout({
               {children}
             </main>
             <footer className="text-center py-4 text-sm text-gray-500">
-              <p>© {new Date().getFullYear()} App Icon Generator. All rights reserved.</p>
+              <p>© {new Date().getFullYear()} Yak.Software. All rights reserved.</p>
             </footer>
           </div>
           <StructuredData />
