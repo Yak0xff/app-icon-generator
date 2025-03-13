@@ -19,15 +19,13 @@ export function GoogleAdsenseAuto() {
   }
   
   return (
-    <>
-      <Script
-        id="google-adsense"
-        async
-        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
-        strategy="afterInteractive"
-        crossOrigin="anonymous"
-      />
-    </>
+    <Script
+      id="google-adsense"
+      async
+      src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
+      strategy="afterInteractive"
+      crossOrigin="anonymous"
+    />
   );
 }
 
