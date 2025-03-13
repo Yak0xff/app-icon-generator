@@ -1,7 +1,7 @@
 'use client';
 
+import { GoogleAdSense } from 'nextjs-google-adsense';
 import { useEffect } from 'react';
-import Script from 'next/script';
 
 interface AdProps {
   slot: string;
@@ -10,7 +10,7 @@ interface AdProps {
   responsive?: boolean;
 }
 
-// 自动广告组件
+// 自动广告组件 - 使用 nextjs-google-adsense 库
 export function GoogleAdsenseAuto() {
   const adsenseId = process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_ID;
   
@@ -18,15 +18,7 @@ export function GoogleAdsenseAuto() {
     return null;
   }
   
-  return (
-    <Script
-      id="google-adsense"
-      async
-      src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
-      strategy="afterInteractive"
-      crossOrigin="anonymous"
-    />
-  );
+  return <GoogleAdSense publisherId={adsenseId} />;
 }
 
 // 手动放置广告组件
@@ -91,6 +83,13 @@ export function GoogleAdsenseInArticle({ slot, style }: Omit<AdProps, 'format' |
       />
     </div>
   );
+}
+
+// 声明全局 window.adsbygoogle 类型
+declare global {
+  interface Window {
+    adsbygoogle: any[];
+  }
 }
 
 // 默认导出自动广告组件
