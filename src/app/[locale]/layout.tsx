@@ -41,7 +41,7 @@ export async function generateMetadata(props: {
   // 构建规范链接URL
   const canonicalUrl = new URL(
     locale === defaultLocale ? '/' : `/${locale}`,
-    process.env.NEXT_PUBLIC_SITE_URL || 'https://app-icon-generator.vercel.app'
+    process.env.NEXT_PUBLIC_SITE_URL || 'https://app-icon-generator-one.vercel.app'
   ).toString();
   
   // 构建备用语言链接
@@ -49,7 +49,7 @@ export async function generateMetadata(props: {
   locales.forEach(loc => {
     alternateLanguages[loc] = new URL(
       loc === defaultLocale ? '/' : `/${loc}`,
-      process.env.NEXT_PUBLIC_SITE_URL || 'https://app-icon-generator.vercel.app'
+      process.env.NEXT_PUBLIC_SITE_URL || 'https://app-icon-generator-one.vercel.app'
     ).toString();
   });
   
@@ -78,7 +78,7 @@ export async function generateMetadata(props: {
     title: meta.title,
     description: meta.description,
     keywords: meta.keywords,
-    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://app-icon-generator.vercel.app'),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://app-icon-generator-one.vercel.app'),
     alternates: {
       canonical: canonicalUrl,
       languages: alternateLanguages,

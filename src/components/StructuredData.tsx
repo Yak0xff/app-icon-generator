@@ -18,7 +18,7 @@ export default function StructuredData() {
   const meta = metadata[locale] || metadata[defaultLocale];
   
   // 网站的基础URL
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://app-icon-generator.vercel.app';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://app-icon-generator-one.vercel.app';
   
   // 构建WebSite结构化数据
   const websiteSchema = {
