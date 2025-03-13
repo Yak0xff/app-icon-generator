@@ -1,0 +1,39 @@
+{
+  "app": {
+    "title": "App Icon Generator",
+    "description": "Générez des icônes d'application pour AppStore et Google Play en un clic"
+  },
+  "upload": {
+    "title": "Télécharger une icône",
+    "preview": "Aperçu",
+    "dragActive": "Déposez l'image ici",
+    "dragInactive": "Glissez et déposez une image ici, ou cliquez pour télécharger",
+    "supportedFormats": "Formats PNG, JPG, JPEG, SVG supportés, taille recommandée 1024×1024 pixels"
+  },
+  "generate": {
+    "title": "Générer des icônes",
+    "preview": "Aperçu de l'icône",
+    "uploadFirst": "Veuillez d'abord télécharger une image",
+    "button": "Générer des icônes de toutes tailles",
+    "regenerate": "Régénérer les icônes",
+    "generating": "Génération des icônes...",
+    "description": "Générera automatiquement toutes les tailles d'icônes requises pour AppStore et Google Play"
+  },
+  "download": {
+    "title": "Télécharger les icônes",
+    "appStore": {
+      "title": "Icônes AppStore",
+      "description": "Inclut toutes les tailles d'icônes requises pour les applications iOS et macOS",
+      "button": "Télécharger le pack d'icônes AppStore",
+      "downloading": "Téléchargement...",
+      "error": "Erreur lors du téléchargement du pack d'icônes AppStore, veuillez réessayer"
+    },
+    "googlePlay": {
+      "title": "Icônes Google Play",
+      "description": "Inclut toutes les tailles d'icônes requises pour les applications Android",
+      "button": "Télécharger le pack d'icônes Google Play",
+      "downloading": "Téléchargement...",
+      "error": "Erreur lors du téléchargement du pack d'icônes Google Play, veuillez réessayer"
+    }
+  }
+} 

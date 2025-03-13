@@ -1,0 +1,39 @@
+{
+  "app": {
+    "title": "App Icon Generator",
+    "description": "Genera iconos de aplicaciones para AppStore y Google Play con un solo clic"
+  },
+  "upload": {
+    "title": "Subir icono",
+    "preview": "Vista previa",
+    "dragActive": "Suelta la imagen aquí",
+    "dragInactive": "Arrastra y suelta una imagen aquí, o haz clic para subir",
+    "supportedFormats": "Soporta formatos PNG, JPG, JPEG, SVG, tamaño recomendado 1024×1024 píxeles"
+  },
+  "generate": {
+    "title": "Generar iconos",
+    "preview": "Vista previa del icono",
+    "uploadFirst": "Por favor, sube una imagen primero",
+    "button": "Generar iconos de todos los tamaños",
+    "regenerate": "Regenerar iconos",
+    "generating": "Generando iconos...",
+    "description": "Generará automáticamente todos los tamaños de iconos requeridos para AppStore y Google Play"
+  },
+  "download": {
+    "title": "Descargar iconos",
+    "appStore": {
+      "title": "Iconos de AppStore",
+      "description": "Incluye todos los tamaños de iconos requeridos para aplicaciones iOS y macOS",
+      "button": "Descargar paquete de iconos de AppStore",
+      "downloading": "Descargando...",
+      "error": "Error al descargar el paquete de iconos de AppStore, inténtalo de nuevo"
+    },
+    "googlePlay": {
+      "title": "Iconos de Google Play",
+      "description": "Incluye todos los tamaños de iconos requeridos para aplicaciones Android",
+      "button": "Descargar paquete de iconos de Google Play",
+      "downloading": "Descargando...",
+      "error": "Error al descargar el paquete de iconos de Google Play, inténtalo de nuevo"
+    }
+  }
+} 

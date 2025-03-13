@@ -1,0 +1,39 @@
+{
+  "app": {
+    "title": "App Icon Generator",
+    "description": "AppStore と Google Play のアプリアイコンをワンクリックで生成"
+  },
+  "upload": {
+    "title": "アイコンをアップロード",
+    "preview": "プレビュー",
+    "dragActive": "ここに画像をドロップ",
+    "dragInactive": "画像をここにドラッグ＆ドロップ、またはクリックしてアップロード",
+    "supportedFormats": "PNG、JPG、JPEG、SVG形式をサポート、推奨サイズは1024×1024ピクセル"
+  },
+  "generate": {
+    "title": "アイコンを生成",
+    "preview": "アイコンプレビュー",
+    "uploadFirst": "最初に画像をアップロードしてください",
+    "button": "すべてのサイズのアイコンを生成",
+    "regenerate": "アイコンを再生成",
+    "generating": "アイコンを生成中...",
+    "description": "AppStoreとGoogle Playに必要なすべてのサイズのアイコンを自動生成します"
+  },
+  "download": {
+    "title": "アイコンをダウンロード",
+    "appStore": {
+      "title": "AppStore アイコン",
+      "description": "iOSとmacOSアプリに必要なすべてのアイコンサイズを含む",
+      "button": "AppStore アイコンパックをダウンロード",
+      "downloading": "ダウンロード中...",
+      "error": "AppStore アイコンパックのダウンロード中にエラーが発生しました。再試行してください"
+    },
+    "googlePlay": {
+      "title": "Google Play アイコン",
+      "description": "Androidアプリに必要なすべてのアイコンサイズを含む",
+      "button": "Google Play アイコンパックをダウンロード",
+      "downloading": "ダウンロード中...",
+      "error": "Google Play アイコンパックのダウンロード中にエラーが発生しました。再試行してください"
+    }
+  }
+} 

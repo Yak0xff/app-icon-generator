@@ -1,0 +1,39 @@
+{
+  "app": {
+    "title": "App Icon Generator",
+    "description": "AppStore 및 Google Play 앱 아이콘을 원클릭으로 생성"
+  },
+  "upload": {
+    "title": "아이콘 업로드",
+    "preview": "미리보기",
+    "dragActive": "여기에 이미지를 드롭하세요",
+    "dragInactive": "이미지를 여기에 끌어다 놓거나 클릭하여 업로드하세요",
+    "supportedFormats": "PNG, JPG, JPEG, SVG 형식 지원, 권장 크기 1024×1024 픽셀"
+  },
+  "generate": {
+    "title": "아이콘 생성",
+    "preview": "아이콘 미리보기",
+    "uploadFirst": "먼저 이미지를 업로드하세요",
+    "button": "모든 크기 아이콘 생성",
+    "regenerate": "아이콘 재생성",
+    "generating": "아이콘 생성 중...",
+    "description": "AppStore 및 Google Play에 필요한 모든 크기의 아이콘을 자동으로 생성합니다"
+  },
+  "download": {
+    "title": "아이콘 다운로드",
+    "appStore": {
+      "title": "AppStore 아이콘",
+      "description": "iOS 및 macOS 앱에 필요한 모든 아이콘 크기 포함",
+      "button": "AppStore 아이콘 팩 다운로드",
+      "downloading": "다운로드 중...",
+      "error": "AppStore 아이콘 팩 다운로드 중 오류가 발생했습니다. 다시 시도하세요"
+    },
+    "googlePlay": {
+      "title": "Google Play 아이콘",
+      "description": "Android 앱에 필요한 모든 아이콘 크기 포함",
+      "button": "Google Play 아이콘 팩 다운로드",
+      "downloading": "다운로드 중...",
+      "error": "Google Play 아이콘 팩 다운로드 중 오류가 발생했습니다. 다시 시도하세요"
+    }
+  }
+} 

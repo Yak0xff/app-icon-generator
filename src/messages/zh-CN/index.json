@@ -1,0 +1,39 @@
+{
+  "app": {
+    "title": "App Icon Generator",
+    "description": "一键生成 AppStore 和 Google Play 应用商店的 App Icon"
+  },
+  "upload": {
+    "title": "上传图标",
+    "preview": "预览",
+    "dragActive": "将图片拖放到这里",
+    "dragInactive": "拖放图片到这里，或点击上传",
+    "supportedFormats": "支持 PNG, JPG, JPEG, SVG 格式，建议尺寸 1024×1024 像素"
+  },
+  "generate": {
+    "title": "生成图标",
+    "preview": "图标预览",
+    "uploadFirst": "请先上传一张图片",
+    "button": "生成所有尺寸图标",
+    "regenerate": "重新生成图标",
+    "generating": "正在生成图标...",
+    "description": "将自动生成 AppStore 和 Google Play 所需的所有尺寸图标"
+  },
+  "download": {
+    "title": "下载图标",
+    "appStore": {
+      "title": "AppStore 图标",
+      "description": "包含所有 iOS 和 macOS 应用所需的图标尺寸",
+      "button": "下载 AppStore 图标包",
+      "downloading": "正在下载...",
+      "error": "下载 AppStore 图标包时出错，请重试"
+    },
+    "googlePlay": {
+      "title": "Google Play 图标",
+      "description": "包含所有 Android 应用所需的图标尺寸",
+      "button": "下载 Google Play 图标包",
+      "downloading": "正在下载...",
+      "error": "下载 Google Play 图标包时出错，请重试"
+    }
+  }
+} 
